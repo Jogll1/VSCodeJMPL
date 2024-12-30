@@ -1,0 +1,25 @@
+{
+  "name": "jmpl",
+  "displayName": "vscode-jmpl",
+  "description": "A VS Code plugin for the JMPL language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jmpl",
+      "aliases": ["JMPL", "jmpl"],
+      "extensions": [".jmpl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jmpl",
+      "scopeName": "source.jmpl",
+      "path": "./syntaxes/jmpl.tmLanguage.json"
+    }]
+  }
+}
