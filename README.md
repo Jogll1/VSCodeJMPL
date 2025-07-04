@@ -1,4 +1,4 @@
-# vscode-jmpl
+# JMPL for VSCode
 
 ## Features
 
