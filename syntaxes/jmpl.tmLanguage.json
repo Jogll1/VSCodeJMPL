@@ -7,7 +7,7 @@
 	"name": "JMPL",
 	"patterns": [{ "include": "#expression" }],
 	"repository": {
-	  "expression": {
+		"expression": {
 		"patterns": [
 			{
 				"include": "#comment"
@@ -35,56 +35,63 @@
 			},
 			{ 
 				"include": "#paren-expression" 
-			}
-		]
-	  },
-	  "comment": {
-		"match": "//.*$",
-		"name": "comment.line"
-	  },
-	  "comment-block": {
-		"begin": "/\\*",
-		"end": "\\*/",
-		"name": "comment.block"
-	  },
-	  "strings": {
-		"begin": "\"",
-		"end": "\"",
-		"name": "string.quoted.double",
-		"patterns": [
+			},
 			{
-				"name": "constant.character.escape",
-				"natch": "\\\\[\"'\\n\\r\\t\\\\]"
+				"include": "#identifier"
 			}
 		]
-	  },
-	  "keyword-control": {
-		"match": "if|then|else|while|do",
-		"name": "keyword.control"
-	  },
-	  "keyword-other": {
-		"match": "out|let",
-		"name": "keyword.control"
-	  },
-	  "constant-numeric": {
-		"match": "\\b\\d+(\\.\\d+)?\\b",
-		"name": "constant.numeric"
-	  },
-	  "constant-language": {
-		"match": "true|false|null",
-		"name": "constant.language"
-	  },
-	  "paren-expression": {
-		"begin": "\\(",
-		"end": "\\)",
-		"beginCaptures": {
-		  "0": { "name": "punctuation.paren.open" }
 		},
-		"endCaptures": {
-		  "0": { "name": "punctuation.paren.close" }
+		"comment": {
+			"match": "//.*$",
+			"name": "comment.line"
 		},
-		"name": "expression.group",
-		"patterns": [{ "include": "#expression" }]
-	  }
+		"comment-block": {
+			"begin": "/\\*",
+			"end": "\\*/",
+			"name": "comment.block"
+		},
+		"strings": {
+			"begin": "\"",
+			"end": "\"",
+			"name": "string.quoted.double",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"natch": "\\\\[\"'\\n\\r\\t\\\\]"
+				}
+		]
+		},
+		"keyword-control": {
+			"match": "\\b(if|then|else|while|do)\\b",
+			"name": "keyword.control"
+		},
+		"keyword-other": {
+			"match": "\\b(out|let|func|return)\\b",
+			"name": "keyword.control"
+		},
+		"constant-numeric": {
+			"match": "\\b\\d+(\\.\\d+)?\\b",
+			"name": "constant.numeric"
+		},
+		"constant-language": {
+			"match": "\\b(true|false|null)\\b",
+			"name": "constant.language"
+		},
+		"paren-expression": {
+			"begin": "\\(",
+			"end": "\\)",
+			"beginCaptures": {
+				"0": { "name": "punctuation.paren.open" }
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.paren.close" }
+			},
+			"name": "expression.group",
+			"patterns": [{ "include": "#expression" }]
+		},
+			"identifier": {
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b",
+			"name": "identifier"
+		}
 	}
 }
