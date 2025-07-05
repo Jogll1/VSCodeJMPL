@@ -6,3 +6,8 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 - Basic syntax highlighting
+
+## [v0.0.2]
+
+- Fixed keyword highlighting regex
+- Added icon
