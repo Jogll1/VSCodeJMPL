@@ -62,11 +62,11 @@
 		]
 		},
 		"keyword-control": {
-			"match": "\\b(if|then|else|while|do)\\b",
+			"match": "\\b(if|then|else|while|for|do)\\b",
 			"name": "keyword.control"
 		},
 		"keyword-other": {
-			"match": "\\b(out|let|func|return)\\b",
+			"match": "\\b(out|let|func|return|not|and|or|mod|intersect|union|subset|subseteq|in)\\b",
 			"name": "keyword.control"
 		},
 		"constant-numeric": {

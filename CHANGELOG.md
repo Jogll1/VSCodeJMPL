@@ -11,3 +11,4 @@ All notable changes to the extension will be documented in this file.
 
 - Fixed keyword highlighting regex
 - Added icon
+- Added highlighting for keywords from JMPL v0.2.0
