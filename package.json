@@ -3,6 +3,7 @@
     "publisher": "JMPL",
     "displayName": "JMPL",
     "icon": "images/JMPLMascot.png",
+    "repository": "https://github.com/Jogll1/VSCodeJMPL",
     "description": "A VS Code plugin for the JMPL language.",
     "version": "0.0.2",
     "engines": {
