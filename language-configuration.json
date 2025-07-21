@@ -26,5 +26,10 @@
         ["\"", "\""],
         ["'", "'"],
         ["/*", "*/"]
-    ]
+    ],
+    // When an indent and dedent should occur
+    "indentationRules": {
+        "increaseIndentPattern": "^.*\\b(then|do|else)\\b\\s*$|^.*[=\\{\\(\\[]\\s*$",
+        "decreaseIndentPattern": "^\\s*(else)\\b|^\\s*[\\)\\}\\]].*$"
+    }
 }

@@ -1,13 +1,13 @@
 {
     "name": "vscode-jmpl",
-    "publisher": "JMPL",
+    "publisher": "Jogll1",
     "displayName": "JMPL",
     "icon": "images/JMPLMascot.png",
     "repository": "https://github.com/Jogll1/VSCodeJMPL",
     "description": "A VS Code plugin for the JMPL language.",
-    "version": "0.0.2",
+    "version": "0.2.0",
     "engines": {
-            "vscode": "^1.96.0"
+        "vscode": "^1.96.0"
     },
     "categories": [
         "Programming Languages"
@@ -23,6 +23,10 @@
             "language": "jmpl",
             "scopeName": "source.jmpl",
             "path": "./syntaxes/jmpl.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "jmpl",
+            "path": "./snippets/jmpl.code-snippets.json"
         }]
     }
 }

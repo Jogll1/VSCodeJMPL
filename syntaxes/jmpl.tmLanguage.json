@@ -65,15 +65,15 @@
 		]
 		},
 		"keyword-control": {
-			"match": "\\b(if|then|else|while|for|do|return)\\b",
+			"match": "\\b(if|then|else|while|for|do|out|put|return)\\b",
 			"name": "keyword.control"
 		},
 		"keyword-operator": {
-			"match": "\\b(not|and|or|mod|intersect|union|subset|subseteq|in)\\b",
+			"match": "\\b(not|and|or|mod|intersect|union|subset|subseteq|in|forall|exists|some|arb)\\b",
 			"name": "keyword.control"
 		},
 		"keyword-other": {
-			"match": "\\b(out|let|func)\\b",
+			"match": "\\b(let|func)\\b",
 			"name": "keyword.other"
 		},
 		"constant-numeric": {
@@ -96,7 +96,7 @@
 			"name": "expression.group",
 			"patterns": [{ "include": "#expression" }]
 		},
-			"identifier": {
+		"identifier": {
 			"match": "\\b[a-zA-Z_\\u0370-\\u03FF\\u1F00-\\u1FFF][a-zA-Z0-9_\\u0370-\\u03FF\\u1F00-\\u1FFF]*\\b",
 			"name": "variable.other.identifier"
 		}

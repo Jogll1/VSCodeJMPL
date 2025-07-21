@@ -1,0 +1,12 @@
+{
+    "For Loop": {
+        "prefix": ["for"],
+        "body": ["for ${2:x} ∈ ${1:S} do", "\t$0"],
+        "description": "A for loop."
+    },
+    "Set Builder": {
+        "prefix": ["{x}"],
+        "body": ["{${2:x} | ${2:x} ∈ ${1:S}}"],
+        "description": "A set-builder."
+    }
+}
