@@ -9,39 +9,17 @@
 	"repository": {
 		"expression": {
 		"patterns": [
-			{
-				"include": "#comment"
-			},
-			{
-				"include": "#comment-block"
-			},
-			{
-				"include": "#strings"
-			},
-			{ 
-				"include": "#keyword-control" 
-			},
-			{ 
-				"include": "#keyword-operator" 
-			},
-			{ 
-				"include": "#keyword-other" 
-			},
-			{ 
-				"include": "#constant-numeric" 
-			},
-			{ 
-				"include": "#constant-language" 
-			},
-			{
-				"include": "#constant"
-			},
-			{ 
-				"include": "#paren-expression" 
-			},
-			{
-				"include": "#identifier"
-			}
+			{ "include": "#comment" },
+			{ "include": "#comment-block" },
+			{ "include": "#strings" },
+			{ "include": "#keyword-control" },
+			{ "include": "#keyword-operator" },
+			{ "include": "#keyword-other" },
+			{ "include": "#constant-numeric" },
+			{ "include": "#constant-language" },
+			{ "include": "#constant" },
+			{ "include": "#paren-expression" },
+			{ "include": "#identifier" }
 		]
 		},
 		"comment": {
@@ -58,14 +36,14 @@
 			"end": "\"",
 			"name": "string.quoted.double",
 			"patterns": [
-				{
-					"name": "constant.character.escape",
-					"natch": "\\\\[\"'\\n\\r\\t\\\\]"
-				}
+			{
+				"name": "constant.character.escape",
+      			"match": "\\\\[ntr\"\\\\]"
+			}	
 		]
 		},
 		"keyword-control": {
-			"match": "\\b(if|then|else|while|for|do|out|put|return)\\b",
+			"match": "\\b(if|then|else|while|for|do|return)\\b",
 			"name": "keyword.control"
 		},
 		"keyword-operator": {

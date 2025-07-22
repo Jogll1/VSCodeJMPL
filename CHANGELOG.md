@@ -22,3 +22,7 @@ All notable changes to the extension will be documented in this file.
 - Added code snippets for:
     - for loops (type "for")
     - set-builders (type "{x}")
+
+## [v0.2.1]
+- Escape character highlighting
+- Added .jmpl file icon

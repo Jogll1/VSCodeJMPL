@@ -6,7 +6,7 @@
     },
     "Set Builder": {
         "prefix": ["{x}"],
-        "body": ["{${2:x} | ${2:x} ∈ ${1:S}}"],
+        "body": ["{${2:x} | ${2:x} ∈ ${1:S}"],
         "description": "A set-builder."
     }
 }
