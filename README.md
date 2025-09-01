@@ -11,7 +11,7 @@ This is the full list of code snippets:
 
 | Shortcut | Code  | Description |
 |------|---------|------|
-| {x} | {x | x ∈ S} | A set-builder. |
+| {x} | {x \| x ∈ S} | A set-builder. |
 | for | for x ∈ S do | A for loop. |
 
 ### Symbol Insertion
@@ -77,7 +77,7 @@ Greek letters:
 | `μ`  | \\mu |
 | `ν`  | \\nu |
 | `ξ`  | \\xi |
-| `ο`  | \\omicron" |
+| `ο`  | \\omicron |
 | `π`  | \\pi |
 | `ρ`  | \\rho |
 | `σ`  | \\sigma |
