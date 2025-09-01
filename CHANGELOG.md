@@ -26,3 +26,14 @@ All notable changes to the extension will be documented in this file.
 ## [v0.2.1]
 - Escape character highlighting
 - Added .jmpl file icon
+
+## [v0.2.2]
+- Removed .jmpl file icon
+
+## [v0.2.3]
+- Added more escape character highlighting
+- Added character highlighting
+
+## [v0.2.4]
+- Added `with` keyword highlighting
+- Added symbol insertion for keywords, operators, and Greek letters

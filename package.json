@@ -5,7 +5,7 @@
     "icon": "images/JMPLMascot.png",
     "repository": "https://github.com/Jogll1/VSCodeJMPL",
     "description": "A VS Code plugin for the JMPL language.",
-    "version": "0.2.1",
+    "version": "0.2.4",
     "engines": {
         "vscode": "^1.96.0"
     },
@@ -17,11 +17,7 @@
             "id": "jmpl",
             "aliases": ["JMPL", "jmpl"],
             "extensions": [".jmpl"],
-            "configuration": "./language-configuration.json",
-            "icon": {
-                "light": "images/JMPLMascotZoomed.svg",
-                "dark": "images/JMPLMascotZoomed.svg"
-            }
+            "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "jmpl",
